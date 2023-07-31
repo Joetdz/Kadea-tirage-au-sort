@@ -56,6 +56,10 @@ function App() {
           <div className="card">
             {isLoading ? (
               <Loader />
+            ) : winners.length >= 5 ? (
+              <>
+                <h1>Felicitations aux gagnants ! </h1>
+              </>
             ) : (
               <>
                 <h1>Let's Go</h1>
