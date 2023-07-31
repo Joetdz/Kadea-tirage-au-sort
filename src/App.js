@@ -25,7 +25,7 @@ function App() {
         setTimeout(function () {
           setIsloaading(false);
           setWinners([...winners, monTableau]);
-        }, 10000);
+        }, 3000);
 
         console.log(data.data);
       })
@@ -62,11 +62,26 @@ function App() {
         <div className="winners-sec">
           <h2>Winners</h2>
 
-          <div className="winner">{winners[0] ? winners[0][0][1] : ""}</div>
-          <div className="winner">{winners[1] ? winners[1][0][1] : ""}</div>
-          <div className="winner">{winners[2] ? winners[2][0][1] : ""}</div>
-          <div className="winner">{winners[3] ? winners[3][0][1] : ""}</div>
-          <div className="winner">{winners[4] ? winners[4][0][1] : ""}</div>
+          <div className="winner">
+            <span>{winners[0] ? winners[0][0][1] : ""}</span>
+            <span>{winners[0] ? winners[0][1][1] : ""}</span>
+          </div>
+          <div className="winner">
+            <span>{winners[1] ? winners[1][0][1] : ""}</span>
+            <span>{winners[1] ? winners[1][1][1] : ""}</span>
+          </div>
+          <div className="winner">
+            <span>{winners[2] ? winners[2][0][1] : ""}</span>
+            <span>{winners[2] ? winners[2][1][1] : ""}</span>
+          </div>
+          <div className="winner">
+            <span>{winners[3] ? winners[3][0][1] : ""}</span>
+            <span>{winners[3] ? winners[3][1][1] : ""}</span>
+          </div>
+          <div className="winner">
+            <span>{winners[4] ? winners[4][0][1] : ""}</span>
+            <span>{winners[4] ? winners[4][1][1] : ""}</span>
+          </div>
         </div>
       </div>
     </div>
