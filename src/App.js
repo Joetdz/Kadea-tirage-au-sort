@@ -15,7 +15,7 @@ function App() {
   const getwinner = () => {
     setIsloaading(true);
     axios
-      .get("http://localhost:8000/")
+      .get("https://tirage.onrender.com/")
       .then((data) => {
         const monObjet = data.data;
         const monTableau = Object.keys(monObjet).map(function (cle) {
