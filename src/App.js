@@ -5,6 +5,9 @@ import axios from "axios";
 import Loader from "./component/Loader";
 
 function App() {
+  const tam = new Audio("tam.mp3");
+  const win = new Audio("win.mp3");
+
   const liste = [];
   localStorage.setItem("liste", liste);
   const initilaListe = localStorage.getItem("liste");
@@ -14,6 +17,7 @@ function App() {
 
   const getwinner = () => {
     setIsloaading(true);
+    tam.play();
     axios
       .get("https://tirage.onrender.com/")
       .then((data) => {
@@ -24,6 +28,7 @@ function App() {
         console.log(monTableau, "tab");
         setTimeout(function () {
           setIsloaading(false);
+          win.play();
           setWinners([...winners, monTableau]);
         }, 3000);
 
