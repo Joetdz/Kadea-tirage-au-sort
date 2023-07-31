@@ -5,7 +5,7 @@ import axios from "axios";
 import Loader from "./component/Loader";
 
 function App() {
-  const tam = new Audio("tam.mp3");
+  const tam = new Audio("tam2.mp3");
   const win = new Audio("win.mp3");
 
   const liste = [];
@@ -30,7 +30,7 @@ function App() {
           setIsloaading(false);
           win.play();
           setWinners([...winners, monTableau]);
-        }, 3000);
+        }, 10000);
 
         console.log(data.data);
       })
