@@ -52,13 +52,13 @@ function App() {
       </div>
       <div className="main">
         <div className="tirage-sec">
-          <h2>Tirage au sort 5 formations courtes gratuites à gagner</h2>
+          <h2>Tirage au sort 2 formations courtes gratuites à gagner à Goma</h2>
           <div className="card">
             {isLoading ? (
               <Loader />
             ) : winners.length >= 5 ? (
               <>
-                <h1>Felicitations aux gagnants ! </h1>
+                <h1>Félicitations aux gagnants ! </h1>
               </>
             ) : (
               <>
@@ -72,24 +72,12 @@ function App() {
           <h2>Winners</h2>
 
           <div className="winner">
-            <span>{winners[0] ? winners[0][0][1] : ""}</span>
             <span>{winners[0] ? winners[0][1][1] : ""}</span>
+            <span>{winners[0] ? winners[0][2][1] : ""}</span>
           </div>
           <div className="winner">
-            <span>{winners[1] ? winners[1][0][1] : ""}</span>
             <span>{winners[1] ? winners[1][1][1] : ""}</span>
-          </div>
-          <div className="winner">
-            <span>{winners[2] ? winners[2][0][1] : ""}</span>
-            <span>{winners[2] ? winners[2][1][1] : ""}</span>
-          </div>
-          <div className="winner">
-            <span>{winners[3] ? winners[3][0][1] : ""}</span>
-            <span>{winners[3] ? winners[3][1][1] : ""}</span>
-          </div>
-          <div className="winner">
-            <span>{winners[4] ? winners[4][0][1] : ""}</span>
-            <span>{winners[4] ? winners[4][1][1] : ""}</span>
+            <span>{winners[1] ? winners[1][2][1] : ""}</span>
           </div>
         </div>
       </div>
