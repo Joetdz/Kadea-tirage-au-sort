@@ -52,7 +52,9 @@ function App() {
       </div>
       <div className="main">
         <div className="tirage-sec">
-          <h2>Tirage au sort 2 formations courtes gratuites à gagner à Goma</h2>
+          <h2>
+            Tirage au sort 2 formations courtes gratuites à gagner à Lubumbashi
+          </h2>
           <div className="card">
             {isLoading ? (
               <Loader />
