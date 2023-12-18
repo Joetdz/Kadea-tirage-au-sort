@@ -69,13 +69,17 @@ function App() {
           </div>
         </div>
         <div className="winners-sec">
-          <h2>Winners</h2>
+          <h2>Gagnants</h2>
 
           <div className="winner">
-            <span>{winners[0] ? winners[0][1][1] : ""}</span>
+            <span>
+              <strong>{winners[0] ? "" : "1"}</strong>
+              {winners[0] ? winners[0][1][1] : ""}
+            </span>
             <span>{winners[0] ? winners[0][2][1] : ""}</span>
           </div>
           <div className="winner">
+            <strong>{winners[0] ? "" : "2"}</strong>
             <span>{winners[1] ? winners[1][1][1] : ""}</span>
             <span>{winners[1] ? winners[1][2][1] : ""}</span>
           </div>
