@@ -79,7 +79,7 @@ function App() {
             <span>{winners[0] ? winners[0][2][1] : ""}</span>
           </div>
           <div className="winner">
-            <strong>{winners[0] ? "" : "2"}</strong>
+            <strong>{winners[1] ? "" : "2"}</strong>
             <span>{winners[1] ? winners[1][1][1] : ""}</span>
             <span>{winners[1] ? winners[1][2][1] : ""}</span>
           </div>
