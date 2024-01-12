@@ -52,9 +52,7 @@ function App() {
       </div>
       <div className="main">
         <div className="tirage-sec">
-          <h2>
-            Tirage au sort 2 formations courtes gratuites à gagner à Lubumbashi
-          </h2>
+          <h2>Tirage au sort Kadea Bonana</h2>
           <div className="card">
             {isLoading ? (
               <Loader />
@@ -84,6 +82,21 @@ function App() {
             <strong>{winners[1] ? "" : "2"}</strong>
             <span>{winners[1] ? winners[1][1][1] : ""}</span>
             <span>{winners[1] ? winners[1][2][1] : ""}</span>
+          </div>
+          <div className="winner">
+            <strong>{winners[2] ? "" : "3"}</strong>
+            <span>{winners[2] ? winners[2][1][1] : ""}</span>
+            <span>{winners[2] ? winners[2][2][1] : ""}</span>
+          </div>
+          <div className="winner">
+            <strong>{winners[3] ? "" : "4"}</strong>
+            <span>{winners[3] ? winners[3][1][1] : ""}</span>
+            <span>{winners[3] ? winners[3][2][1] : ""}</span>
+          </div>
+          <div className="winner">
+            <strong>{winners[4] ? "" : "5"}</strong>
+            <span>{winners[4] ? winners[4][1][1] : ""}</span>
+            <span>{winners[4] ? winners[4][2][1] : ""}</span>
           </div>
         </div>
       </div>
